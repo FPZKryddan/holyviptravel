@@ -11,6 +11,6 @@
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
   },
-  "include": ["src", "vite.config.ts"],
-  "exclude": ["dist", "node_modules"]
+  "include": ["src", "vite.config.ts", "react-router.config.ts"],
+  "exclude": ["docs", "node_modules"]
 }

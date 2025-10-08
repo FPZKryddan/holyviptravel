@@ -39,6 +39,8 @@ build/Release
 
 # Dependency directories
 node_modules/
+.react-router/
+.react-router
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
