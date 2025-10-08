@@ -36,11 +36,12 @@ bower_components
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
+build/client
 
 # Dependency directories
 node_modules/
 .react-router/
-.react-router
+.react-routerx
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)

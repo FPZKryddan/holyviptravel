@@ -105,10 +105,10 @@ const Competition = () => {
         </div>
         <div className="relative h-full lg:flex-1/2" style={{ viewTransitionName: 'img' }}>
           <img src="wallpaper_2k.png" className="h-full w-full bg-cover bg-center" />
-          <img
+          {/* <img
             src="logo.png"
             className="absolute top-0 left-1/2 w-48 -translate-x-1/2 lg:left-0 lg:translate-0"
-          />
+          /> */}
         </div>
       </div>
     </>
