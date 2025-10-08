@@ -11,3 +11,7 @@
   --color-brown: #b8860b;
   --color-brownyellow: #c5a253;
 }
+
+* {
+  font-family: 'Inter';
+}
