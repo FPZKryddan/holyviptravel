@@ -8,7 +8,7 @@ const Header = () => {
     >
       <img src="logo.png" className="h-12" />
       <ul className="ml-auto flex flex-row items-center gap-6 px-6">
-        <NavItem label="Home" path="/" />
+        <NavItem label="Hem" path="/" />
         <NavItem label="Tävlingsvilkor" path="/tavling" />
       </ul>
     </div>
