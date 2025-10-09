@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router';
-import PrimaryCTAButton from '../components/PrimaryCTAButton';
+
 import Header from '../components/Header';
+import PrimaryCTAButton from '../components/PrimaryCTAButton';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -80,18 +81,18 @@ const Home = () => {
       <div className="relative flex h-dvh items-center justify-center bg-cover bg-center md:p-24">
         <Header />
         <div
-          className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center"
+          className="from- absolute inset-0 -z-10 h-full w-full bg-linear-to-b bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('/wallpaper.webp')] bg-cover bg-center dark:bg-[linear-gradient(to_right_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/wallpaper.webp')]"
           style={{
-            backgroundImage:
-              'linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/wallpaper.webp)',
+            // backgroundImage:
+            //   'linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/wallpaper.webp)',
             viewTransitionName: 'img',
           }}
         ></div>
-        <div className="flex w-fit flex-col items-center justify-center gap-6 rounded-2xl bg-white/10 p-4 backdrop-blur-xs md:items-start md:justify-start">
-          <h1 className="text-darkblue text-shadow-xl w-full text-center text-4xl font-bold text-wrap md:text-left md:text-4xl">
+        <div className="flex w-fit flex-col items-center justify-center gap-6 rounded-2xl bg-white/10 p-4 backdrop-blur-xs md:items-start md:justify-start dark:bg-black/10">
+          <h1 className="text-darkblue dark:text-lightblue text-shadow-xl w-full text-center text-4xl font-bold text-wrap md:text-left md:text-4xl">
             Drömmer du om din nästa resa?
           </h1>
-          <div className="text-md flex flex-col gap-3 text-center text-black md:text-left">
+          <div className="text-md flex flex-col gap-3 text-center text-black md:text-left dark:text-white">
             <p>Vi lanserar snart en ny typ av resetjänst.</p>
             <p>Vi säljer inte resor utan kunskap</p>
 

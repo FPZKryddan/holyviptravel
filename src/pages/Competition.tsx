@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
-import PrimaryCTAButton from '../components/PrimaryCTAButton';
+
 import Header from '../components/Header';
+import PrimaryCTAButton from '../components/PrimaryCTAButton';
 
 const Competition = () => {
   const onCTAClicked = () => {
@@ -23,7 +24,7 @@ const Competition = () => {
     <>
       <div className="relative m-0 flex h-dvh flex-col p-0 lg:flex-row">
         <Header />
-        <div className="text-darkblue order-1 flex flex-col items-center bg-white px-6 py-12 text-center md:px-24 lg:order-0 lg:flex-1/2 lg:px-12">
+        <div className="text-darkblue dark:text-lightblue order-1 flex flex-col items-center bg-white px-6 py-12 text-center md:px-24 lg:order-0 lg:flex-1/2 lg:px-12 dark:bg-stone-950">
           <Heading>Tävlingsinformation &amp; villkor</Heading>
 
           <Text>
