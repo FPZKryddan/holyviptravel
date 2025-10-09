@@ -77,16 +77,18 @@ const Home = () => {
     //   </div>
     // </>
     <>
-      <div
-        className="relative flex h-dvh items-center justify-center bg-cover bg-center md:p-24"
-        style={{
-          backgroundImage:
-            'linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/wallpaper_2k.webp)',
-        }}
-      >
+      <div className="relative flex h-dvh items-center justify-center bg-cover bg-center md:p-24">
         <Header />
+        <div
+          className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center"
+          style={{
+            backgroundImage:
+              'linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/wallpaper.webp)',
+            viewTransitionName: 'img',
+          }}
+        ></div>
         <div className="flex w-fit flex-col items-center justify-center gap-6 rounded-2xl bg-white/10 p-4 backdrop-blur-xs md:mr-48 md:items-start md:justify-start">
-          <h1 className="text-golden text-shadow-xl w-full text-center text-4xl font-bold text-wrap md:text-left md:text-4xl">
+          <h1 className="text-darkblue text-shadow-xl w-full text-center text-4xl font-bold text-wrap md:text-left md:text-4xl">
             Drömmer du om din nästa resa?
           </h1>
           <div className="text-md flex flex-col gap-3 text-center text-black md:text-left">

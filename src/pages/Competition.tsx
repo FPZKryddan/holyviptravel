@@ -10,20 +10,19 @@ const Competition = () => {
 
     const tryAppUrl = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent) ? appUrl1 : webUrl;
 
-    const started = Date.now();
     window.location.href = tryAppUrl;
 
     setTimeout(() => {
-      if (Date.now() - started < 1600) {
-        window.location.href = webUrl;
-      }
+      // if (Date.now() - started < 1600) {
+      window.location.href = webUrl;
+      // }
     }, 1200);
   };
 
   return (
     <>
-      <Header />
-      <div className="m-0 flex h-dvh flex-col p-0 lg:flex-row">
+      <div className="relative m-0 flex h-dvh flex-col p-0 lg:flex-row">
+        <Header />
         <div className="text-darkblue order-1 flex flex-col items-center bg-white px-6 py-12 text-center md:px-24 lg:order-0 lg:flex-1/2 lg:px-12">
           <Heading>Tävlingsinformation &amp; villkor</Heading>
 
