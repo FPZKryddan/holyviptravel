@@ -77,7 +77,13 @@ const Home = () => {
     //   </div>
     // </>
     <>
-      <div className="relative flex h-dvh items-center justify-center bg-[url(/wallpaper_2k.png)] bg-cover bg-center md:p-24">
+      <div
+        className="relative flex h-dvh items-center justify-center bg-cover bg-center md:p-24"
+        style={{
+          backgroundImage:
+            'linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(/wallpaper_2k.webp)',
+        }}
+      >
         <Header />
         <div className="flex w-fit flex-col items-center justify-center gap-6 rounded-2xl bg-white/10 p-4 backdrop-blur-xs md:mr-48 md:items-start md:justify-start">
           <h1 className="text-golden text-shadow-xl w-full text-center text-4xl font-bold text-wrap md:text-left md:text-4xl">
