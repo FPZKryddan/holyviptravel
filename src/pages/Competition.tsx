@@ -103,7 +103,7 @@ const Competition = () => {
           <PrimaryCTAButton label="Starta resan på Instagram" callback={onCTAClicked} />
         </div>
         <div className="relative h-full lg:flex-1/2" style={{ viewTransitionName: 'img' }}>
-          <img src="/wallpaper_2k.png" className="h-full w-full bg-cover bg-center" />
+          <img src="/wallpaper.webp" className="h-full w-full bg-cover bg-center" />
           {/* <img
             src="logo.png"
             className="absolute top-0 left-1/2 w-48 -translate-x-1/2 lg:left-0 lg:translate-0"

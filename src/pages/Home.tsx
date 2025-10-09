@@ -87,7 +87,7 @@ const Home = () => {
             viewTransitionName: 'img',
           }}
         ></div>
-        <div className="flex w-fit flex-col items-center justify-center gap-6 rounded-2xl bg-white/10 p-4 backdrop-blur-xs md:mr-48 md:items-start md:justify-start">
+        <div className="flex w-fit flex-col items-center justify-center gap-6 rounded-2xl bg-white/10 p-4 backdrop-blur-xs md:items-start md:justify-start">
           <h1 className="text-darkblue text-shadow-xl w-full text-center text-4xl font-bold text-wrap md:text-left md:text-4xl">
             Drömmer du om din nästa resa?
           </h1>

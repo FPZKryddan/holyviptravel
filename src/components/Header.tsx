@@ -21,6 +21,11 @@ const BurgerMenu = () => {
   return (
     <>
       {isDropDownOpen && <Backdrop onClick={() => setIsDropDownOpen(false)} />}
+      <img
+        src="/logo.png"
+        className={`visible absolute top-6 left-1/2 h-32 -translate-x-1/2 transition-all duration-100 md:hidden ${isDropDownOpen ? 'opacity-30' : 'opacity-100'}`}
+      />
+
       <div
         className="visible absolute top-6 right-6 z-10 size-12 rounded-md border-white/20 bg-white/30 p-1 backdrop-blur-xl hover:cursor-pointer hover:bg-white/50 md:hidden"
         onClick={() => setIsDropDownOpen(!isDropDownOpen)}
