@@ -23,7 +23,7 @@ const BurgerMenu = () => {
       {isDropDownOpen && <Backdrop onClick={() => setIsDropDownOpen(false)} />}
       <img
         src="/logo.png"
-        className={`visible absolute top-6 left-1/2 h-32 -translate-x-1/2 transition-all duration-100 md:hidden ${isDropDownOpen ? 'opacity-30' : 'opacity-100'}`}
+        className={`visible absolute top-0 left-1/2 h-24 -translate-x-1/2 transition-all duration-100 md:hidden ${isDropDownOpen ? 'opacity-30' : 'opacity-100'}`}
       />
 
       <div
@@ -64,7 +64,7 @@ const DropDownNavItem = ({ label, path }: { label: string; path: string }) => {
   return (
     <li
       onClick={() => navigate(`${path}`, { viewTransition: true })}
-      className={`font-regular h-[44px] rounded-2xl px-6 text-lg leading-[44px] hover:cursor-pointer ${pathname === path ? 'bg-white/30' : ''}`}
+      className={`font-regular h-[44px] rounded-2xl px-6 text-lg leading-[44px] hover:cursor-pointer ${pathname === path ? 'bg-linear-to-br from-white/20 to-white/50' : ''}`}
     >
       {label}
     </li>
@@ -92,7 +92,7 @@ const NavItem = ({ label, path }: { label: string; path: string }) => {
   return (
     <li
       onClick={() => navigate(`${path}`, { viewTransition: true })}
-      className={`font-regular h-[34px] rounded-2xl px-4 text-lg leading-[34px] transition-all duration-100 hover:cursor-pointer ${pathname === path ? 'bg-white/30' : ''}`}
+      className={`font-regular h-[34px] rounded-2xl px-4 text-lg leading-[34px] transition-all duration-100 hover:cursor-pointer ${pathname === path ? 'bg-linear-to-br from-white/20 to-white/50' : ''}`}
     >
       {label}
     </li>
