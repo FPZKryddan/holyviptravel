@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { useLocation, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 
 const Header = () => {
   const [mounted, setMounted] = useState(false);
@@ -67,16 +67,17 @@ const DropDownMenu = ({ isOpen }: { isOpen: boolean }) => {
 };
 
 const DropDownNavItem = ({ label, path }: { label: string; path: string }) => {
-  const navigate = useNavigate();
   const { pathname } = useLocation();
 
   return (
-    <li
-      onClick={() => navigate(`${path}`, { viewTransition: true })}
+    <Link
+      type="button"
+      to={path}
+      viewTransition
       className={`font-regular h-[44px] rounded-2xl px-6 text-lg leading-[44px] text-black hover:cursor-pointer dark:text-white ${pathname === path ? 'bg-linear-to-br from-white/20 to-white/50 dark:from-black/20 dark:to-black/50' : ''}`}
     >
       {label}
-    </li>
+    </Link>
   );
 };
 
@@ -96,15 +97,16 @@ const NavBar = () => {
 };
 
 const NavItem = ({ label, path }: { label: string; path: string }) => {
-  const navigate = useNavigate();
   const { pathname } = useLocation();
   return (
-    <li
-      onClick={() => navigate(`${path}`, { viewTransition: true })}
+    <Link
+      to={path}
+      type="button"
+      viewTransition
       className={`font-regular h-[34px] rounded-2xl px-4 text-lg leading-[34px] text-black transition-all duration-100 hover:cursor-pointer hover:bg-linear-to-br hover:from-white/10 hover:to-white/20 dark:text-white dark:hover:from-black/10 dark:hover:to-black/20 ${pathname === path ? 'bg-linear-to-br from-white/20 to-white/50 dark:from-black/20 dark:to-black/50' : ''}`}
     >
       {label}
-    </li>
+    </Link>
   );
 };
 
