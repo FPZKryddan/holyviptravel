@@ -36,13 +36,13 @@ const ThemeToggler = () => {
   }, [isDarkMode, mounted]);
 
   if (!mounted) {
-    return <div className="absolute top-6 left-6 size-10 bg-transparent" aria-hidden="true" />;
+    return <div className="size-12 bg-transparent" aria-hidden="true" />;
   }
 
   return (
     <button
       type="button"
-      className="absolute top-6 left-6 z-1 size-12 rounded-full bg-linear-to-br from-white/10 to-white/30 p-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)] outline-1 outline-white/50 hover:cursor-pointer hover:from-white/20 hover:to-white/40 dark:from-black/10 dark:to-black/30 dark:outline-black/50 dark:hover:from-black/20 dark:hover:to-black/40"
+      className="z-1 size-12 rounded-full bg-linear-to-br from-white/10 to-white/30 p-1 shadow-[0_8px_30px_rgb(0,0,0,0.12)] outline-1 outline-white/50 hover:cursor-pointer hover:from-white/20 hover:to-white/40 dark:from-black/10 dark:to-black/30 dark:outline-black/50 dark:hover:from-black/20 dark:hover:to-black/40"
       onClick={() => setTheme(!isDarkMode)}
       aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
       style={{ viewTransitionName: 'theme-toggler' }}
